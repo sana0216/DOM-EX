@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>
+        specific Tag
+    </title>
+</head>
+  
+<body>
+    <h1 style="color:red">Felight.io</h1>
+    <h3>
+        Click the button to count all<br>
+        children the div element
+    </h3>
+  
+    <h5>Count all child elements of <ul> elements</h5>
+    <ul id="parentID">
+        <li>First element</li>
+        <li>Second element</li>
+        <li>Thrid element</li>
+        <li>Fourth element</li>
+    </ul>
+    <button onclick="Felight()">
+        Click Here!
+    </button>
+    <h5 id="Felight "></h5>
+    <script>
+        // This function count the child elements
+        function felight() {
+            var count = document.getElementById(
+                "parentID").childElementCount;
+            document.getElementById("Felight").innerHTML
+                = "Total Number of Child node: "
+                + count;
+        }
+    </script>
+</body>
+</html>

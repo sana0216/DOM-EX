@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anchor</title>
+    </head>
+<body>
+<a name="html">HTML Tutorial</a><br>
+<a name="css">CSS styles</a><br>
+<a name="java">JavaScript</a><br>
+<a name="react">reactjs</a>
+<p>Click the button to display the number of anchors in the document.</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var x = document.anchors.length;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
